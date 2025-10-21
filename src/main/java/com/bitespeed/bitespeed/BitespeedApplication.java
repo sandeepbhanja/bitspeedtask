@@ -12,6 +12,7 @@ public class BitespeedApplication implements CommandLineRunner {
     private String dbUrl;
 
     public static void main(String[] args) {
+        System.out.println("JDBC: " + System.getenv("JDBC"));
         SpringApplication.run(BitespeedApplication.class, args);
     }
 
